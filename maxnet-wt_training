@@ -1,0 +1,10 @@
+weights = []
+node_wts = []
+#node_wts.append(uniform(0, -0.25))
+node_wts.append(-0.25)
+node_wts = node_wts*m
+
+for i in range(0, m):
+	node = node_wts.copy()
+	node[i] = 1
+	weights.append(node)
